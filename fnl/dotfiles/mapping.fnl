@@ -6,6 +6,9 @@
 (defn- noremap [mode from to]
   "Sets a mapping with {:noremap true}."
   (nvim.set_keymap mode from to {:noremap true}))
+(defn- map [mode from to]
+  "Sets a mapping with {:noremap true}."
+  (nvim.set_keymap mode from to {:noremap false}))
 
 ;; Generic mapping configuration.
 (nvim.set_keymap :n :<space> :<nop> {:noremap true})
@@ -16,6 +19,12 @@
 (noremap :i :jk :<esc>)
 (noremap :c :jk :<c-c>)
 (noremap :t :jk :<c-\><c-n>)
+
+;; window movement
+(map :n :<C-j> "<C-W>j")
+(map :n :<C-k> "<C-W>k")
+(map :n :<C-h> "<C-W>h")
+(map :n :<C-l> "<C-W>l")
 
 ;; Spacemacs style leader mappings.
 (noremap :n :<leader>wm ":tab sp<cr>")
