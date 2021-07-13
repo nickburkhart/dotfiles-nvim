@@ -50,12 +50,17 @@
   :jiangmiao/auto-pairs {:mod :auto-pairs}
   :junegunn/fzf {:mod :fzf}
   :junegunn/fzf.vim {}
+  :kyazdani42/nvim-web-devicons {}
   :lambdalisue/suda.vim {}
   :liuchengxu/vim-better-default {:mod :better-default}
   :maxmellon/vim-jsx-pretty {}
   :mbbill/undotree {:mod :undotree}
   :neovim/nvim-lspconfig {}
   :norcalli/nvim-colorizer.lua {:mod :colorizer}
+  :nvim-lua/popup.nvim {}
+  :nvim-lua/plenary.nvim {}
+  :nvim-telescope/telescope.nvim {}
+  :nvim-treesitter/nvim-treesitter {}
   :pangloss/vim-javascript {}
   :prettier/vim-prettier {:ft :javascript}
   :radenling/vim-dispatch-neovim {}
